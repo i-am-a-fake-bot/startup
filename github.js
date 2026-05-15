@@ -1,5 +1,5 @@
-const GITHUB_USER = "YOUR_USERNAME";
-const REPO = "YOUR_REPO";
+const GITHUB_USER = "i-am-a-fake-bot";
+const REPO = "startup";
 const FILE_PATH = "data.json";
 const TOKEN = "YOUR_GITHUB_TOKEN";
 
