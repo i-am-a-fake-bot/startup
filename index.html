@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory PWA</title>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Store Inventory</h1>
+
+<div class="form">
+    <input id="name" placeholder="Product Name">
+    <input id="supplierCost" type="number" placeholder="Supplier Cost">
+    <input id="unitsPerPack" type="number" placeholder="Units per Pack">
+    <input id="stock" type="number" placeholder="Inventory Stock">
+    <input id="markup" type="number" placeholder="Markup %">
+
+    <button onclick="addItem()">Add Item</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Cost/Unit</th>
+            <th>Markup %</th>
+            <th>Recommended Price</th>
+            <th>Stock</th>
+            <th>Selling Price</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="inventoryTable"></tbody>
+</table>
+
+<script src="github.js"></script>
+<script src="app.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</body>
+</html>
