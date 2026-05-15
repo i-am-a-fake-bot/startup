@@ -1,7 +1,7 @@
 const GITHUB_USER = "i-am-a-fake-bot";
 const REPO = "startup";
 const FILE_PATH = "data.json";
-const TOKEN = "YOUR_GITHUB_TOKEN";
+const TOKEN = "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";
 
 async function syncToGitHub() {
     const url = `https://api.github.com/repos/${GITHUB_USER}/${REPO}/contents/${FILE_PATH}`;
