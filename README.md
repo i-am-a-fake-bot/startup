@@ -1,0 +1,2 @@
+# startup
+new store inventory
